@@ -1074,6 +1074,7 @@ p {
   .hero {
     padding-top: 1rem;
     min-height: auto;
+    background-image: url("Mobile Hero Section.jpg");
     background-position: 60% center;
   }
 
