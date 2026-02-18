@@ -1008,8 +1008,8 @@ p {
 
 @media (max-width: 900px) {
   body {
-    min-width: 1120px;
-    overflow-x: auto;
+    min-width: 0;
+    overflow-x: hidden;
   }
 
   .section {
@@ -1018,8 +1018,12 @@ p {
 
   .nav {
     min-height: 68px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.85rem;
     position: relative;
+  }
+
+  .brand {
+    max-width: calc(100% - 56px);
   }
 
   .brand-logo-wrap {
@@ -1070,7 +1074,7 @@ p {
   .hero {
     padding-top: 6.3rem;
     min-height: auto;
-    background-position: 58% center;
+    background-position: 60% center;
   }
 
   .hero-grid {
@@ -1093,15 +1097,15 @@ p {
   }
 
   .hero-float-cluster {
-    height: 360px;
-    max-width: 420px;
-    margin: 0 auto 0.4rem;
+    height: 345px;
+    max-width: 390px;
+    margin: 0 auto 0.2rem;
   }
 
   .float-card-main {
     width: 58%;
-    height: 250px;
-    top: 58px;
+    height: 236px;
+    top: 60px;
     left: 21%;
   }
 
@@ -1112,7 +1116,7 @@ p {
   .float-card-extra-two,
   .float-card-extra-three {
     width: 24%;
-    height: 112px;
+    height: 104px;
   }
 
   .float-card-left {
@@ -1187,7 +1191,7 @@ p {
 
   .review-more-card {
     min-height: 120px;
-    grid-column: auto;
+    grid-column: 1 / -1;
   }
 
   #contact .contact-grid {
@@ -1209,19 +1213,41 @@ p {
     width: min(1120px, 94%);
   }
 
+  .brand-text {
+    font-size: 0.94rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.46rem;
+    letter-spacing: 0.09em;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2rem, 8.8vw, 2.45rem);
+  }
+
+  .hero-actions {
+    gap: 0.5rem;
+  }
+
+  .hero .btn {
+    padding: 0.58rem 0.86rem;
+    font-size: 0.95rem;
+  }
+
   .cards-grid,
   .gallery-grid {
     grid-template-columns: 1fr;
   }
 
   .hero-float-cluster {
-    height: 332px;
+    height: 315px;
   }
 
   .float-card-main {
     width: 60%;
-    height: 224px;
-    top: 54px;
+    height: 206px;
+    top: 58px;
     left: 20%;
   }
 
@@ -1232,6 +1258,6 @@ p {
   .float-card-extra-two,
   .float-card-extra-three {
     width: 23%;
-    height: 98px;
+    height: 88px;
   }
 }
