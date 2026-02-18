@@ -410,13 +410,13 @@ p {
 
 @keyframes floaty {
   0% {
-    transform: translateY(0) rotate(var(--rot, 0deg));
+    transform: translate3d(0, 0, 0) rotate(var(--rot, 0deg));
   }
   50% {
-    transform: translateY(-10px) rotate(var(--rot, 0deg));
+    transform: translate3d(6px, -18px, 0) rotate(var(--rot, 0deg));
   }
   100% {
-    transform: translateY(0) rotate(var(--rot, 0deg));
+    transform: translate3d(0, 0, 0) rotate(var(--rot, 0deg));
   }
 }
 
