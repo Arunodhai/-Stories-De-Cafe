@@ -1008,8 +1008,8 @@ p {
 
 @media (max-width: 900px) {
   body {
-    min-width: 1120px;
-    overflow-x: auto;
+    min-width: 0;
+    overflow-x: hidden;
   }
 
   #contact .contact-grid {
