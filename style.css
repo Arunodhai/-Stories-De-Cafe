@@ -1058,11 +1058,11 @@ p {
     flex-direction: column;
     gap: 0.3rem;
     padding: 0.65rem;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.55);
-    box-shadow: 0 12px 28px rgba(18, 30, 46, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(18px) saturate(145%);
-    -webkit-backdrop-filter: blur(18px) saturate(145%);
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.62);
+    box-shadow: 0 14px 30px rgba(18, 30, 46, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(44px) saturate(160%);
+    -webkit-backdrop-filter: blur(44px) saturate(160%);
   }
 
   .nav-links.open {
