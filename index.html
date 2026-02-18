@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
   <link rel="preload" as="image" href="optimized/hero-section1.webp" fetchpriority="high" />
@@ -48,15 +48,15 @@
       <div class="container hero-grid">
         <div class="hero-content reveal">
           <p class="eyebrow">#No 1 Restaurant in Karunagappally</p>
-          <h1>Every Meal Tells a Story</h1>
+          <h1 class="hero-title">Every Meal Tells a Story</h1>
           <p class="hero-tagline"></p>
           <p>
-            Welcome to <strong>Stories De Cafe</strong> at AR Gallery, Market Junction. Enjoy rich flavors,
-            signature dishes, and a warm atmosphere in the heart of Karunagappally.
+            Welcome to <strong>Stories De Cafe</strong> at AR Gallery, Market Junction. Karunagappally's most talked-about restaurant — where bold flavors, Middle Eastern grills, and Kerala-inspired recipes meet warm hospitality. Step in, sit down, and let the food do the talking.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="tel:+919846050504">Call for Orders</a>
             <a class="btn btn-outline" href="#contact">Reserve a Table</a>
+            <a class="btn btn-outline" href="https://wa.me/919846050504" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
           </div>
         </div>
         <div class="hero-float-cluster" aria-hidden="true">
@@ -93,13 +93,22 @@
         <div class="reveal">
           <h2>About Stories De Cafe</h2>
           <p>
-            Stories De Cafe is where great food, comfortable ambiance, and meaningful conversations come together.
-            Our menu blends crowd-favorite classics with special in-house recipes prepared fresh every day.
+            At Stories De Cafe, we believe a great meal is more than just food — it's a moment worth remembering. Nestled at AR Gallery, Market Junction, Karunagappally our kitchen brings together the smoky richness of Arabian grills, the comfort of Indian classics, and in-house recipes crafted with care and served fresh daily.
           </p>
           <p>
             Whether you are visiting with family, friends, or for a quick bite, we serve with care and flavor in
             every plate.
           </p>
+          <div class="about-social">
+            <a class="about-social-link" href="https://www.instagram.com/storiesdecafe/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+                <circle cx="12" cy="12" r="4.2"></circle>
+                <circle cx="17.6" cy="6.4" r="1.1"></circle>
+              </svg>
+              <span>Follow us on Instagram</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -108,7 +117,7 @@
       <div class="container">
         <div class="section-head reveal">
           <h2>Signature Dishes</h2>
-          <p>Chef-picked favorites guests keep coming back for.</p>
+          <p>Our most-loved dishes — crafted with care, craved by regulars.</p>
         </div>
         <div class="cards-grid">
           <article class="card reveal">
@@ -124,8 +133,8 @@
             <h3>Beef Ribs Mandi</h3>
           </article>
           <article class="card reveal">
-            <img src="Food and Dishes Pics/BHIRIYANI.png" alt="Bhiriyani" />
-            <h3>Bhiriyani</h3>
+            <img src="Food and Dishes Pics/BHIRIYANI.png" alt="Biryani" />
+            <h3>Biryani</h3>
           </article>
           <article class="card reveal">
             <img src="Food and Dishes Pics/CHICKEN 65.png" alt="Chicken 65" />
@@ -140,8 +149,8 @@
             <h3>Chicken Malai Tikka</h3>
           </article>
           <article class="card reveal">
-            <img src="Food and Dishes Pics/CHICKEN TANDOOR BHIRIYANI.png" alt="Chicken Tandoor Bhiriyani" />
-            <h3>Chicken Tandoor Bhiriyani</h3>
+            <img src="Food and Dishes Pics/CHICKEN TANDOOR BHIRIYANI.png" alt="Chicken Tandoor Biryani" />
+            <h3>Chicken Tandoor Biryani</h3>
           </article>
           <article class="card reveal">
             <img src="Food and Dishes Pics/CHICKEN TIKKA MASALA.png" alt="Chicken Tikka Masala" />
@@ -268,6 +277,7 @@
             <article class="review-card review-summary-card">
               <p class="reviews-summary-label">Average Google Rating</p>
               <p class="reviews-summary-value">4.3<span>/5</span></p>
+              <p class="reviews-summary-count">based on 360+ Google Reviews</p>
               <p class="review-meta">⭐️⭐️⭐️⭐️☆</p>
             </article>
             <article class="review-card">
@@ -322,7 +332,7 @@
       <div class="container">
         <div class="section-head reveal">
           <h2>Reservations & Location</h2>
-          <p>Reserve your table and find us instantly on Google Maps.</p>
+          <p>Ready to visit?  Reserve your table in seconds or just walk in — we'd love to have you.</p>
         </div>
       </div>
       <div class="container contact-grid">
@@ -336,6 +346,10 @@
           <p>
             <strong>Phone (Orders & Enquiries):</strong><br />
             <a href="tel:+919846050504">+91 98460 50504</a>
+          </p>
+          <p>
+            <strong>Opening Hours:</strong><br />
+            12:00 PM - 11:30 PM (Every day)
           </p>
           <iframe
             title="Stories De Cafe Location Map"
@@ -382,9 +396,17 @@
     </section>
   </main>
 
+  <section class="closing-note">
+    <div class="container">
+      <p>Good food. Great stories. See you soon.</p>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container footer-wrap">
-      <p>© <span id="year"></span> Stories De Cafe. All rights reserved.</p>
+      <div class="footer-copy">
+        <p>© <span id="year"></span> Stories De Cafe. All rights reserved.</p>
+      </div>
       <a href="#top">Back to top</a>
     </div>
   </footer>
