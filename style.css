@@ -1113,8 +1113,9 @@ p {
   .float-card-main {
     width: clamp(190px, 62vw, 286px);
     height: clamp(220px, 74vw, 292px);
-    top: 74px;
-    left: 18%;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
   }
 
   .float-card-left,
@@ -1128,33 +1129,33 @@ p {
   }
 
   .float-card-left {
-    top: 10px;
-    left: 2%;
+    top: 24px;
+    left: 4%;
   }
 
   .float-card-right {
-    top: 12px;
-    right: 2%;
+    top: 24px;
+    right: 4%;
   }
 
   .float-card-bottom {
     left: 4%;
-    bottom: 10px;
+    bottom: 18px;
   }
 
   .float-card-extra-three {
     right: 4%;
-    bottom: 10px;
+    bottom: 18px;
   }
 
   .float-card-extra-one {
-    top: 232px;
-    left: -1%;
+    top: 204px;
+    left: 1%;
   }
 
   .float-card-extra-two {
-    top: 226px;
-    right: -1%;
+    top: 204px;
+    right: 1%;
   }
 
   .about-grid {
@@ -1259,8 +1260,9 @@ p {
   .float-card-main {
     width: clamp(180px, 64vw, 248px);
     height: clamp(200px, 70vw, 250px);
-    top: 64px;
-    left: 17%;
+    top: 66px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
   }
 
   .float-card-left,
