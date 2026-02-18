@@ -725,6 +725,10 @@ p {
     width: 100%;
     min-height: 130px;
   }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact {
