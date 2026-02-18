@@ -86,3 +86,59 @@ document.addEventListener('keydown', (event) => {
     closeLightbox();
   }
 });
+
+const eyebrow = document.querySelector('.eyebrow[data-phrases]');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (eyebrow && !reducedMotion) {
+  const phraseAttr = eyebrow.getAttribute('data-phrases') || '';
+  const phrases = phraseAttr.split('|').map((item) => item.trim()).filter(Boolean);
+  if (!phrases.length) {
+    eyebrow.classList.remove('typing');
+  }
+
+  eyebrow.textContent = '';
+  eyebrow.classList.add('typing');
+
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  const typeStep = () => {
+    const current = phrases[phraseIndex] || '';
+
+    if (!isDeleting) {
+      eyebrow.textContent = current.slice(0, charIndex + 1);
+      charIndex += 1;
+
+      if (charIndex >= current.length) {
+        isDeleting = true;
+        setTimeout(typeStep, 1100);
+        return;
+      }
+      setTimeout(typeStep, 78);
+      return;
+    }
+
+    eyebrow.textContent = current.slice(0, Math.max(0, charIndex - 1));
+    charIndex -= 1;
+
+    if (charIndex <= 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      setTimeout(typeStep, 220);
+      return;
+    }
+
+    setTimeout(typeStep, 42);
+  };
+
+  setTimeout(typeStep, 420);
+} else if (eyebrow && reducedMotion) {
+  const phraseAttr = eyebrow.getAttribute('data-phrases') || '';
+  const phrases = phraseAttr.split('|').map((item) => item.trim()).filter(Boolean);
+  if (phrases.length) {
+    eyebrow.textContent = phrases[0];
+  }
+  eyebrow.classList.remove('typing');
+}
