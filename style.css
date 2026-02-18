@@ -451,6 +451,17 @@ p {
   box-shadow: 0 10px 24px rgba(18, 30, 46, 0.22);
 }
 
+.reservation-submit {
+  color: #ffffff;
+  background: #000000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.28);
+  border: 1px solid #000000;
+}
+
+.reservation-submit:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.34);
+}
+
 .btn-outline {
   color: var(--primary);
   border-color: var(--primary);
