@@ -1088,6 +1088,10 @@ p {
     max-width: none;
   }
 
+  .eyebrow {
+    font-size: 0.92rem;
+  }
+
   .hero-actions {
     gap: 0.65rem;
   }
