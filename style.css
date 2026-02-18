@@ -995,72 +995,8 @@ p {
 }
 
 @media (max-width: 900px) {
-  .hero-grid,
-  .contact-grid,
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding-top: 5.4rem;
-  }
-
-  .hero-float-cluster {
-    height: 350px;
-    margin-top: 1rem;
-  }
-
-  .float-card-main {
-    width: 84%;
-    height: 240px;
-    left: 8%;
-    top: 72px;
-  }
-
-  .float-card-left {
-    width: 42%;
-    height: 140px;
-    left: 0;
-    top: 10px;
-  }
-
-  .float-card-right {
-    width: 44%;
-    height: 150px;
-    right: 0;
-    top: 8px;
-  }
-
-  .float-card-bottom {
-    display: none;
-  }
-
-  .float-card-extra-one,
-  .float-card-extra-two,
-  .float-card-extra-three {
-    display: none;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 88px;
-    right: 4%;
-    background: #ffffff;
-    backdrop-filter: blur(18px) saturate(160%);
-    -webkit-backdrop-filter: blur(18px) saturate(160%);
-    border: none;
-    border-radius: 14px;
-    padding: 0.8rem;
-    width: min(280px, 92vw);
-    flex-direction: column;
-    display: none;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: inline-block;
+  body {
+    min-width: 1120px;
+    overflow-x: auto;
   }
 }
