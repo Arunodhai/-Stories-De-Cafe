@@ -400,27 +400,27 @@ p {
 @keyframes floatEnter {
   from {
     opacity: 0;
-    transform: translateY(24px) scale(0.96) rotate(var(--rot, 0deg));
+    transform: translate3d(var(--shift-x, 0px), 24px, 0) scale(0.96) rotate(var(--rot, 0deg));
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1) rotate(var(--rot, 0deg));
+    transform: translate3d(var(--shift-x, 0px), 0, 0) scale(1) rotate(var(--rot, 0deg));
   }
 }
 
 @keyframes floaty {
   0% {
-    transform: translate3d(0, 0, 0) rotate(var(--rot, 0deg));
+    transform: translate3d(var(--shift-x, 0px), 0, 0) rotate(var(--rot, 0deg));
   }
   50% {
-    transform: translate3d(6px, -18px, 0) rotate(var(--rot, 0deg));
+    transform: translate3d(calc(var(--shift-x, 0px) + 6px), -18px, 0) rotate(var(--rot, 0deg));
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(var(--rot, 0deg));
+    transform: translate3d(var(--shift-x, 0px), 0, 0) rotate(var(--rot, 0deg));
   }
 }
 
-.float-card-main { --rot: 0deg; }
+.float-card-main { --rot: 0deg; --shift-x: 0px; }
 .float-card-left { --rot: -11deg; }
 .float-card-right { --rot: 11deg; }
 .float-card-bottom { --rot: -7deg; }
@@ -1115,7 +1115,8 @@ p {
     height: clamp(220px, 74vw, 292px);
     top: 72px;
     left: 50%;
-    transform: translateX(-50%) rotate(0deg);
+    --shift-x: -50%;
+    transform: translate3d(var(--shift-x), 0, 0) rotate(0deg);
   }
 
   .float-card-left,
@@ -1262,7 +1263,8 @@ p {
     height: clamp(200px, 70vw, 250px);
     top: 66px;
     left: 50%;
-    transform: translateX(-50%) rotate(0deg);
+    --shift-x: -50%;
+    transform: translate3d(var(--shift-x), 0, 0) rotate(0deg);
   }
 
   .float-card-left,
