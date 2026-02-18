@@ -1012,7 +1012,226 @@ p {
     overflow-x: auto;
   }
 
+  .section {
+    padding: 3.4rem 0;
+  }
+
+  .nav {
+    min-height: 68px;
+    padding: 0.5rem 1rem;
+    position: relative;
+  }
+
+  .brand-logo-wrap {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-text {
+    font-size: 1rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.65rem;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid var(--border);
+    box-shadow: 0 12px 28px rgba(18, 30, 46, 0.12);
+    backdrop-filter: blur(14px) saturate(135%);
+    -webkit-backdrop-filter: blur(14px) saturate(135%);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.62rem 0.82rem;
+  }
+
+  .hero {
+    padding-top: 6.3rem;
+    min-height: auto;
+    background-position: 58% center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    max-width: none;
+  }
+
+  .hero-actions {
+    gap: 0.65rem;
+  }
+
+  .hero .btn {
+    padding: 0.62rem 0.95rem;
+  }
+
+  .hero-float-cluster {
+    height: 360px;
+    max-width: 420px;
+    margin: 0 auto 0.4rem;
+  }
+
+  .float-card-main {
+    width: 58%;
+    height: 250px;
+    top: 58px;
+    left: 21%;
+  }
+
+  .float-card-left,
+  .float-card-right,
+  .float-card-bottom,
+  .float-card-extra-one,
+  .float-card-extra-two,
+  .float-card-extra-three {
+    width: 24%;
+    height: 112px;
+  }
+
+  .float-card-left {
+    top: 6px;
+    left: 8%;
+  }
+
+  .float-card-right {
+    top: 8px;
+    right: 8%;
+  }
+
+  .float-card-bottom {
+    left: 10%;
+    bottom: 2px;
+  }
+
+  .float-card-extra-three {
+    right: 8%;
+    bottom: 4px;
+  }
+
+  .float-card-extra-one {
+    top: 180px;
+    left: 4%;
+  }
+
+  .float-card-extra-two {
+    top: 176px;
+    right: 4%;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-logo-card {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .cards-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .card img {
+    height: 138px;
+  }
+
+  .gallery-grid img {
+    height: 152px;
+  }
+
+  #menu-images .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-box {
+    padding: 1rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-summary-card {
+    min-height: 170px;
+  }
+
+  .review-more-card {
+    min-height: 120px;
+    grid-column: auto;
+  }
+
   #contact .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-map-card iframe {
+    height: 220px;
+  }
+
+  .footer-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: min(1120px, 94%);
+  }
+
+  .cards-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-float-cluster {
+    height: 332px;
+  }
+
+  .float-card-main {
+    width: 60%;
+    height: 224px;
+    top: 54px;
+    left: 20%;
+  }
+
+  .float-card-left,
+  .float-card-right,
+  .float-card-bottom,
+  .float-card-extra-one,
+  .float-card-extra-two,
+  .float-card-extra-three {
+    width: 23%;
+    height: 98px;
   }
 }
