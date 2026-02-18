@@ -53,6 +53,14 @@ img {
   padding: 5rem 0;
 }
 
+#about {
+  padding-bottom: 2.2rem;
+}
+
+#signature {
+  padding-top: 2.2rem;
+}
+
 h1,
 h2,
 h3 {
@@ -135,6 +143,20 @@ p {
 .brand-text {
   font-size: 1.2rem;
   line-height: 1.1;
+}
+
+.brand-copy {
+  display: grid;
+  line-height: 1.1;
+}
+
+.brand-tagline {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: rgba(24, 32, 44, 0.78);
+  text-transform: uppercase;
 }
 
 .nav-links {
@@ -266,6 +288,7 @@ p {
   z-index: 4;
   transform: rotate(0deg);
   --delay: 0s;
+  animation: none;
 }
 
 .float-card-left {
