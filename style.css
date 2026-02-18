@@ -1107,7 +1107,7 @@ p {
 
   .float-card {
     opacity: 1;
-    padding: 1.5px;
+    padding: 3px;
   }
 
   .float-card-main {
@@ -1126,7 +1126,7 @@ p {
   .float-card-extra-one,
   .float-card-extra-two,
   .float-card-extra-three {
-    width: 26%;
+    width: 25%;
     aspect-ratio: 4 / 5;
     height: auto;
   }
@@ -1276,7 +1276,7 @@ p {
   .float-card-extra-one,
   .float-card-extra-two,
   .float-card-extra-three {
-    width: 26%;
+    width: 25%;
     aspect-ratio: 4 / 5;
     height: auto;
   }
