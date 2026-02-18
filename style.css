@@ -1097,7 +1097,7 @@ p {
   }
 
   .hero-float-cluster {
-    height: 392px;
+    height: 460px;
     width: min(92vw, 460px);
     max-width: 460px;
     min-width: 0;
@@ -1111,9 +1111,10 @@ p {
   }
 
   .float-card-main {
-    width: clamp(230px, 66vw, 322px);
-    height: clamp(148px, 44vw, 210px);
-    top: 106px;
+    width: 58%;
+    aspect-ratio: 31 / 36;
+    height: auto;
+    top: 16%;
     left: 50%;
     --shift-x: -50%;
     transform: translate3d(var(--shift-x), 0, 0) rotate(0deg);
@@ -1125,38 +1126,39 @@ p {
   .float-card-extra-one,
   .float-card-extra-two,
   .float-card-extra-three {
-    width: clamp(84px, 25vw, 120px);
-    height: clamp(62px, 18vw, 90px);
+    width: 24%;
+    aspect-ratio: 4 / 5;
+    height: auto;
   }
 
   .float-card-left {
-    top: 24px;
-    left: 4%;
+    top: 3%;
+    left: 7%;
   }
 
   .float-card-right {
-    top: 24px;
-    right: 4%;
+    top: 3%;
+    right: 3%;
   }
 
   .float-card-bottom {
-    left: 7%;
-    bottom: 16px;
+    left: 6%;
+    bottom: 2%;
   }
 
   .float-card-extra-three {
-    right: 7%;
-    bottom: 16px;
+    right: 3%;
+    bottom: 2%;
   }
 
   .float-card-extra-one {
-    top: 160px;
-    left: 2%;
+    top: 37%;
+    left: 1%;
   }
 
   .float-card-extra-two {
-    top: 160px;
-    right: 2%;
+    top: 37%;
+    right: 1%;
   }
 
   .about-grid {
@@ -1253,15 +1255,16 @@ p {
   }
 
   .hero-float-cluster {
-    height: 334px;
+    height: 420px;
     width: min(94vw, 390px);
     min-width: 0;
   }
 
   .float-card-main {
-    width: clamp(206px, 68vw, 270px);
-    height: clamp(134px, 43vw, 178px);
-    top: 90px;
+    width: 58%;
+    aspect-ratio: 31 / 36;
+    height: auto;
+    top: 16%;
     left: 50%;
     --shift-x: -50%;
     transform: translate3d(var(--shift-x), 0, 0) rotate(0deg);
@@ -1273,38 +1276,39 @@ p {
   .float-card-extra-one,
   .float-card-extra-two,
   .float-card-extra-three {
-    width: clamp(72px, 24vw, 102px);
-    height: clamp(54px, 17vw, 76px);
+    width: 24%;
+    aspect-ratio: 4 / 5;
+    height: auto;
   }
 
   .float-card-left {
-    top: 14px;
-    left: 5%;
+    top: 3%;
+    left: 7%;
   }
 
   .float-card-right {
-    top: 14px;
-    right: 5%;
+    top: 3%;
+    right: 3%;
   }
 
   .float-card-extra-one {
-    top: 136px;
-    left: 4%;
+    top: 37%;
+    left: 1%;
   }
 
   .float-card-extra-two {
-    top: 136px;
-    right: 4%;
+    top: 37%;
+    right: 1%;
   }
 
   .float-card-bottom {
-    left: 8%;
-    bottom: 12px;
+    left: 6%;
+    bottom: 2%;
   }
 
   .float-card-extra-three {
-    right: 8%;
-    bottom: 12px;
+    right: 3%;
+    bottom: 2%;
   }
 
   .card img {
