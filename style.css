@@ -719,6 +719,14 @@ p {
   }
 }
 
+@media (max-width: 640px) {
+  .review-more-card {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-height: 130px;
+  }
+}
+
 .contact {
   padding-bottom: 2rem;
 }
